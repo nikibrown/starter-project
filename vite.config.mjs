@@ -7,6 +7,8 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const indexHtmlPath = path.resolve(__dirname, "src/index.html")
 
 export default defineConfig({
+  // Relative base so assets work on GitHub Pages project sites (/<repo>/), not only at domain root
+  base: "./",
   root: "src",
   publicDir: path.resolve(__dirname, "public"),
   build: {
