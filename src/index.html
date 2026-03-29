@@ -1,53 +1,48 @@
 <html>
-<%- include('./inc/head.html') %>
+  <%- include('./inc/head.html') %>
 
-	<body>
-		<%- include('./inc/header.html') %>
-			<main>
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-12">
-							<h1>Starter Project</h1>
-							<ul class="mb-0">
-								<li>
-									Clone this repo:
-									<code>git clone git@github.com:nikibrown/starter-project.git</code>
-								</li>
-								<li>Navigate to this repo in terminal</li>
-								<li>
-									<code>git remote -v</code> should show
-									<code>origin git@github.com:nikibrown/starter-project.git (fetch)</code>
-									<code>origin git@github.com:nikibrown/starter-project.git (push)</code>
-								</li>
-								<li>
-									Update the remote with your own github repo:
-									<code>git remote set-url origin git@github.com:yourusername/your-repo.git</code>
-								</li>
-								<li><code>npm install</code> to install dependencies</li>
-								<li>
-									<code>npm run dev</code> to run the Vite dev server (edit files under
-									<code>src/</code>)
-								</li>
-								<li>
-									The dev server URL is printed in the terminal (default
-									<a href="http://localhost:5173">http://localhost:5173</a>)
-								</li>
-								<li>
-									<code>npm run build</code> outputs the static site to the
-									<code>/docs</code> folder (for GitHub Pages)
-								</li>
-								<li><code>npm run preview</code> serves the production build locally</li>
-								<li>
-									Static assets that should be copied as-is (favicons, etc.) go in
-									<code>/public</code>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</main>
+  <body>
+    <%- include('./inc/header.html') %>
+    <main>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <h1>Starter Project</h1>
+            <ul class="mb-0">
+              <li>
+                Clone this repo:
+                <code>git clone git@github.com:nikibrown/starter-project.git</code>
+              </li>
+              <li>Navigate to this repo in terminal</li>
+              <li>
+                <code>git remote -v</code> should show
+                <code>origin git@github.com:nikibrown/starter-project.git (fetch)</code>
+                <code>origin git@github.com:nikibrown/starter-project.git (push)</code>
+              </li>
+              <li>
+                Update the remote with your own github repo:
+                <code>git remote set-url origin git@github.com:yourusername/your-repo.git</code>
+              </li>
+              <li><code>npm install</code> to install dependencies</li>
+              <li><code>npm run dev</code> to run the Vite dev server (edit files under <code>src/</code>)</li>
+              <li>
+                The dev server URL is printed in the terminal (default
+                <a href="http://localhost:5173">http://localhost:5173</a>)
+              </li>
+              <li>
+                <code>npm run build</code> outputs the static site to the <code>/docs</code> folder (for GitHub Pages)
+              </li>
+              <li><code>npm run preview</code> serves the production build locally</li>
+              <li>
+                Static assets that should be copied as-is (favicons, etc.) go in
+                <code>/public</code>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
 
-			<%- include('./inc/footer.html') %>
-	</body>
-
+    <%- include('./inc/footer.html') %>
+  </body>
 </html>

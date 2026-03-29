@@ -1,10 +1,10 @@
 /* Bootstrap 5 `media-breakpoint-up(xl)` → min-width 1200px */
 @media (min-width: 1200px) {
-	.container,
-	.container-sm,
-	.container-md,
-	.container-lg,
-	.container-xl {
-		max-width: 1180px !important;
-	}
+  .container,
+  .container-sm,
+  .container-md,
+  .container-lg,
+  .container-xl {
+    max-width: 1180px !important;
+  }
 }
