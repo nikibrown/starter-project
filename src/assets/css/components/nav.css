@@ -1,16 +1,16 @@
 @media all and (min-width: 992px) {
-	.navbar .nav-item .dropdown-menu {
-		display: none;
-		margin-top: 0;
-	}
+  .navbar .nav-item .dropdown-menu {
+    display: none;
+    margin-top: 0;
+  }
 
-	.navbar .nav-item:hover .dropdown-menu {
-		display: block;
-	}
+  .navbar .nav-item:hover .dropdown-menu {
+    display: block;
+  }
 }
 
 @media all and (max-width: 992px) {
-	.navbar-toggler:checked ~ #navbarSupportedContent {
-		display: block !important;
-	}
+  .navbar-toggler:checked ~ #navbarSupportedContent {
+    display: block !important;
+  }
 }
