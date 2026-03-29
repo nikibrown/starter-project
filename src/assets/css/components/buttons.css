@@ -1,0 +1,32 @@
+.btn {
+	border: none;
+	border-radius: 25px;
+	font-size: 16px;
+	font-weight: 700;
+	text-transform: uppercase;
+	padding: 15px 25px;
+	position: relative;
+}
+
+.btn .fas {
+	position: absolute;
+	right: 25px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.btn.btn-primary {
+	background-color: var(--brand-pink);
+}
+
+.btn.btn-primary:hover {
+	background-color: var(--brand-pink-hover);
+}
+
+.btn.btn-secondary {
+	background-color: var(--brand-purple);
+}
+
+.btn.btn-secondary:hover {
+	background-color: var(--brand-purple-hover);
+}
