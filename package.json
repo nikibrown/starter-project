@@ -2,9 +2,12 @@
 	"name": "starterproject",
 	"version": "1.0.0",
 	"description": "Starter Project site",
+	"type": "module",
 	"main": "index.html",
 	"scripts": {
-		"dev": "gulp"
+		"dev": "vite",
+		"build": "vite build",
+		"preview": "vite preview"
 	},
 	"repository": {
 		"type": "git",
@@ -20,14 +23,8 @@
 		"bootstrap": "^5.1.3",
 		"eslint": "^8.6.0",
 		"eslint-config-prettier": "^8.3.0",
-		"gulp-postcss": "^8.0.0",
-		"gulp-sass": "^5.1.0",
 		"prettier": "^2.5.1",
-		"sass": "^1.46.0"
-	},
-	"dependencies": {
-		"browser-sync": "^2.26.14",
-		"gulp": "^4.0.2",
-		"gulp-file-include": "^2.3.0"
+		"vite": "^6.2.0",
+		"vite-plugin-html": "^3.2.2"
 	}
 }
