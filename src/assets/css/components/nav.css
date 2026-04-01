@@ -14,3 +14,19 @@
     display: block !important;
   }
 }
+
+.navbar-toggler {
+  -webkit-appearance: none;
+  background: 0 0;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  padding: 0;
+}
+.navbar-toggler::before {
+  content: "☰";
+  font-size: 2rem;
+  display: block;
+  text-align: center;
+  font-size: 40px;
+}
