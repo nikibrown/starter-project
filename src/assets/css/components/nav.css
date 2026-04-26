@@ -1,32 +1,7 @@
-@media all and (min-width: 992px) {
-  .navbar .nav-item .dropdown-menu {
-    display: none;
-    margin-top: 0;
-  }
-
-  .navbar .nav-item:hover .dropdown-menu {
-    display: block;
-  }
-}
-
-@media all and (max-width: 992px) {
-  .navbar-toggler:checked ~ #navbarSupportedContent {
-    display: block !important;
-  }
-}
-
 .navbar-toggler {
-  -webkit-appearance: none;
-  background: 0 0;
-  border: none;
-  cursor: pointer;
-  position: relative;
-  padding: 0;
+  border: 1px solid var(--brand-light-gray2);
 }
-.navbar-toggler::before {
-  content: "☰";
-  font-size: 2rem;
-  display: block;
-  text-align: center;
-  font-size: 40px;
+
+.navbar-toggler:focus-visible {
+  box-shadow: 0 0 0 0.25rem rgb(0 113 188 / 25%);
 }
