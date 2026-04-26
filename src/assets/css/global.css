@@ -19,10 +19,3 @@
     transition-duration: 0.01ms !important;
   }
 }
-
-@media (prefers-color-scheme: dark) {
-  body {
-    background: var(--brand-dark);
-    color: var(--brand-light-gray1);
-  }
-}
