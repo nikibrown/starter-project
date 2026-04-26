@@ -1,9 +1,8 @@
 import fs from "node:fs"
 import path from "node:path"
 import { fileURLToPath } from "node:url"
-import { render as renderEjs } from "ejs"
+import ejs from "ejs"
 import { defineConfig } from "vite"
-import { createHtmlPlugin } from "vite-plugin-html"
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const srcRoot = path.resolve(__dirname, "src")
@@ -41,19 +40,6 @@ const rollupInput = Object.fromEntries(
   }),
 )
 
-const pages = htmlFiles.map((absPath) => {
-  const rel = path.relative(srcRoot, absPath).replace(/\\/g, "/")
-  return {
-    template: rel,
-    filename: rel,
-    injectOptions: {
-      ejsOptions: {
-        filename: absPath,
-      },
-    },
-  }
-})
-
 function ejsIncludesFirst() {
   return {
     name: "ejs-includes-first",
@@ -65,7 +51,7 @@ function ejsIncludesFirst() {
         const filename = ctx.filename
           ? path.resolve(ctx.filename)
           : path.join(srcRoot, "index.html")
-        return renderEjs(html, {}, { filename, views: [srcRoot] })
+        return ejs.render(html, {}, { filename, views: [srcRoot] })
       },
     },
   }
@@ -83,11 +69,5 @@ export default defineConfig({
       input: rollupInput,
     },
   },
-  plugins: [
-    ejsIncludesFirst(),
-    createHtmlPlugin({
-      entry: "/main.js",
-      pages,
-    }),
-  ],
+  plugins: [ejsIncludesFirst()],
 })
