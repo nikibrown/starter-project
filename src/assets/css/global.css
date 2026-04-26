@@ -8,3 +8,21 @@
 @import "./components/breadcrumbs.css";
 @import "./components/sidebar.css";
 @import "./components/buttons.css";
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: var(--brand-dark);
+    color: var(--brand-light-gray1);
+  }
+}
