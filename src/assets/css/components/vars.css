@@ -12,6 +12,7 @@
   --base-spacing-unit: 20px;
   --brand-gradient-pink: linear-gradient(180deg, var(--brand-light-purple) 0%, var(--brand-pink) 100%);
   --breadcrumb-divider: "»";
+  --bs-breadcrumb-divider: var(--breadcrumb-divider);
   /* ~5% darker than brand pinks for hover (replaces Sass darken) */
   --brand-pink-hover: #e04d8a;
   --brand-purple-hover: #520040;
