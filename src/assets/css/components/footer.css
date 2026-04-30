@@ -1,4 +1,8 @@
 footer {
-  background: #ccc;
+  background: salmon;
   padding: 40px 0;
+}
+
+footer a {
+  color: var(--brand-dark);
 }
